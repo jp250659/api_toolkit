@@ -40,3 +40,13 @@ lists:
       set.ext.response.body#1#.type: savings
       set.ext.response.body#1#.label: My savings account
       set.ext.response.body#1#.balance: 200000
+  - if: "fields['ext.request.query.customerId'] eq '2'"
+    steps:
+    - action: copy
+      parameters:
+        set.ext.response.body#1#.id: 6666
+  - else: "" 
+    steps:
+    - action: copy
+      parameters:
+        set.ext.response.body#1#.id: 7777

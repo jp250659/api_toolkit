@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0-SNAPSHOT-oas3
-  title: lesson 3
+  title: lesson 2a
 servers:
   - url: /v1
 paths:

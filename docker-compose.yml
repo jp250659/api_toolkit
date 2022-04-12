@@ -1,6 +1,6 @@
 version: '3'
 services:
-  lesson3:
+  lesson2:
     build: .
     ports:
     - "8080:8080"
@@ -15,3 +15,7 @@ services:
    image: ncr-csp-docker-snapshots.jfrog.io/tx-apitoolkit-ui:2.4.0-latest
    ports:
    - "8090:8090"
+  csp-customer-documentation:
+   image: ncr-csp-docker-snapshots.jfrog.io/csp-customer-documentation:2.8.0-779
+   ports:
+   - "8070:8080"
