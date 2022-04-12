@@ -8,7 +8,7 @@ paths:
   /accounts:
     post:
       description: Create Account
-      operationId: accounts/createAccount
+      operationId: createAccount
       requestBody:
         content:
           application/json:
@@ -24,7 +24,7 @@ paths:
                 $ref: '#/components/schemas/Account'
     get:
       description: Query for accounts by customerId
-      operationId: accounts/queryAccounts
+      operationId: queryAccounts
       parameters:
         - in: query
           name: customerId
@@ -44,7 +44,7 @@ paths:
   /accounts/{id}:
     get:
       description: Get Account Balances
-      operationId: accounts/getBalance
+      operationId: getBalance
       parameters:
         - in: path
           name: id
